@@ -1,0 +1,276 @@
+/* Design Général --------------------------------------------------------*/ 
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{ 
+	background-color: #fafafa;
+}
+
+
+
+/* Design Typographique -------------------------------------------------*/
+p,h1,h2,a {
+	color: #fafafa;
+	font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1 {
+	margin-bottom: 5vh;
+	text-align: center;
+	font-size: 40px;
+	text-shadow: 0px 0px 10px black;
+}
+
+/* Design Entête ------------------------------------------------------*/ 
+header{
+	width: 100vw;
+	height: 100px;
+	background-image: url(Images/lanternes2.jpg);
+	background-size: cover;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	text-shadow: 0px 0px 10px black;
+	box-shadow: 0px 0px 10px black;
+	position: fixed;
+}
+
+.menuFantome{
+	width: 100vw;
+	height: 100px;
+}
+
+label {
+	font-size: 40px;
+	display: none;
+	color: white;
+}
+
+#switch{
+	display: none;
+}
+
+.boutonMenu{
+	color: white;
+	text-decoration: none;
+	text-shadow: 0px 0px 10px black;
+	margin-right: 20px;s
+}
+
+nav a:hover{
+	background-color: #fb3700;
+}
+
+@media (max-width: 600px){
+	header {
+		display: block;
+	}
+
+	label {
+		display: block;
+		float: right;
+	}
+
+	nav {
+		display: none;
+	}
+
+	#switch:checked + nav{
+		display: block;
+		clear: both;
+	}
+
+	.boutonMenu{
+		color: black;
+		text-shadow: none;
+	}
+	nav a {
+		width: 100%;
+		display: block;
+		text-align: center;
+		background-color: white;
+		padding-top: 20px; 
+		padding-bottom: 20px;
+		border-bottom: 4px solid black;
+	}
+
+	nav a:hover{
+	background-color: #fb3700;
+	}
+
+}
+
+
+/* Colonne Centrale --------------------------------------------------*/ 
+.colonneCentrale{
+	width: 95vw;
+	min-height: 80vh;
+	background-image: url(images/parapluie.jpeg);
+	background-size: cover;
+	margin-left: 2.5vw;
+}
+
+
+@media(max-width: 800px) {
+	.colonneCentrale{
+		width: 100vw;
+		margin-left: 0px;
+	}
+}
+
+
+
+/* Section n°1 --------------------------------------------------------*/ 
+
+.expaceflex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-left: 15vw;
+	width: 60vw; 
+}
+
+.GrandePhoto {
+	width: 40%;
+	border: 20px solid #fafafa; 
+	border-bottom: 70px solid #fafafa;
+}
+
+.annotation {
+	margin-left: 40px;
+	text-align: justify;
+	text-shadow: 0px 0px 10px black;
+}
+
+@media (max-width: 800px){
+	.expaceflex{
+		flex-direction: column;
+	}
+	.GrandePhoto{
+		width: 35vh;
+		margin-left: 5vh;
+	}
+}
+
+/*Section n°2 --------------------------------------------------------*/ 
+.texte2{
+	margin-top: 10vh;
+	text-align: center;
+	margin-bottom: 5vh;
+	text-shadow: 0px 0px 10px black;
+}
+
+.section2{
+	min-height: 40vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.cartesection2{
+	width: 21vw;
+	height: 36vh;
+	padding: 5px;
+	text-align: center;
+	background-color: #fafafa ;  
+	border-radius: 10%;
+	box-shadow: 0px 0px 10px black;
+	border: 2px solid black;
+}
+
+.Icon {
+	color: #fafafa;
+	width: 40%;
+}
+
+.textesection2{
+	color: black;
+}
+
+@media(max-width: 800px) {
+	.texte2{
+		margin-left: 1vh;
+		text-align: center;
+	}
+	.section2{
+		flex-direction: column;
+	}
+	.cartesection2{
+		width: 60vw;
+		height: 40vh;
+		margin: 15px;
+		border-radius: 10%;
+		margin: 20px;
+	}
+	.texte2{
+		margin-top: 20vh;
+	}
+	
+}
+
+/*Section n°3------------------------------------------------------------*/ 
+.H2s3{
+	margin-top: 5vh;
+	text-align: center;
+}
+
+.blocSection3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    margin-bottom: 2.5vh;
+}
+
+.texteSection3{
+    width: 50%;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+
+.f{
+ 	width: 30%;
+ }
+
+
+.Teamlab {
+	width: 30%;
+}
+
+@media (max-width: 800px){
+	.blocSection3{
+		flex-direction: column;
+		align-items: center;
+	}
+	.f {
+		width: 70%;
+	}
+
+	.Teamlab{
+		width: 70%;
+	}
+}
+
+/*Design Footer --------------------------------------------------------*/
+footer{ 
+	height: 100px;
+	background-color:#fafafa ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+ }
+
+footer a {
+ 	color: black;
+ 	text-decoration: none;
+ 	margin: 15px;
+ }
+
+
+
+
+
+
+
